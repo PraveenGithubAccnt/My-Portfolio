@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Praveen Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,700&family=Protest+Riot&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    
+    <script src="portfolio.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <input type="checkbox" id="check" name="check">
+        <label for="check" id="checkbtn" title="Toggle Navigation"><i class="fa fa-bars"></i></label>
+        <label class="left" id="log"> Praveen's Portfolio </label>
+        <ul>
+            <li><a  href="index.html" class="nav_li" >Home</a></li>
+                  <li><a href="about.html" class="nav_li">About</a></li>
+                  <li><a href="skills.html" class="nav_li">Skills</a></li>
+                  <li><a href="project.html" class="nav_li">Projects</a></li>
+                  <li><a href="contact.html" class="nav_li">Contact</a></li>
+            </ul>
+    </nav>
+    </header>
+    <main>
+      <section id="projects">
+        <div class="projects container">
+          <div class="section-heading">
+            <h1 class="education_heading"><span>Recent Projects</span></h1>
+          </div>
+          <div class="all-projects">
+            <div class="project-item">
+              <div class="project-info">
+                <h2>Project 1</h2>
+                <h3 class="about_project">Voice Assistant For Websites Automation Using Python :- <a href="https://github.com/PraveenGithubAccnt/voice_assistant_in-_Hindi_English.git" target="Project_Link"> GitHub Repository </a></h3>
+                <p>
+                    "Introducing my innovative project: Voice Assistant for Websites Automation using Python.
+                    <span id="dots">...</span>
+                    <span id="more">
+                        This cutting-edge solution seamlessly integrates voice commands into website operations, revolutionizing user interactions.
+                        Leveraging the power of Python, our Voice Assistant empowers users to navigate and control websites effortlessly through natural spoken language.
+                        From executing commands to automating tasks, this project enhances user experience by providing a hands-free and intuitive interface.
+                        Experience the future of website interaction with our Voice Assistant, where efficiency meets convenience, and accessibility takes center stage.
+                    </span>
+                </p>
+                <button onclick="toggleReadMore()" id="myBtn">Read more</button>
+              </div>      
+            </div>
+          </div>
+        </div>
+      </section>
+</main>
+  </body>
+</html>
