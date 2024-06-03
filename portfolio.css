@@ -1,5 +1,8 @@
 body,html {
-  background-color: #FEEDE5;
+ /* background-color: #FEEDE5; */
+  background: url('portweb2.png');
+  background-size: cover;
+  background-blend-mode: overlay;
   font-family: 'Playfair Display', serif;
   font-family: 'Protest Riot', sans-serif;
   font-size: 1.5rem;
@@ -195,7 +198,7 @@ nav ul li a:hover {
   justify-content: center;
   flex-direction: column;
   padding: 1.5rem;
-  background-color: #FEEDE5;
+  /* background-color: #FEEDE5; */
   
 }
 
@@ -762,9 +765,9 @@ button:active {
 }
 
 
-#contact {
+/* #contact {
   background-color: #FEEDE5;
-}
+} */
 
 #contact .education_heading {
   font-size: 2.5rem;
@@ -877,7 +880,7 @@ button:active {
 }
 
 #footer {
-	background-color:#D6BBA6;
+	/* background-color:#D6BBA6; */
   text-align: center;
   border-radius: 10px;
 }
