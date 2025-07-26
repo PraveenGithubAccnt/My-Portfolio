@@ -110,32 +110,11 @@ document.addEventListener("DOMContentLoaded", function () {
     // Handle specific queries using JSON data
     if (query.includes("name")) {
       return `My name is ${personalData.name}.`;
-    } else if (query.includes("you") || query.includes("who are you")) {
-      return `I'm a chat bot Assitant made by ${personalData.name}. to assist you with his portfolio.`;
-    } else if (query.includes("tell me about") || query.includes("about")) {
-      return `He is a MCA graduate aspiring Software Developer specializing in mobile and AI-integrated applications, passionate about building 
-      impactful solutions and contributing to innovative tech environments, specializing in skills like ${personalData.skills.join(
-        ", "
-      )}.`;
-    } else if (query.includes("hello") || query.includes("hii")) {
-      return `Hello! I'm ${personalData.name}'s Assistant How can I assist you today? Ask me about my education, skills, address, projects, or contact details!`;
-    } else if (
-      query.includes("how") ||
-      query.includes("how are you") ||
-      query.includes("good")
-    ) {
-      return `I'm just a bot, but I'm here to help you with ${personalData.name}'s portfolio! How can I assist you today?`;
-    } else if (query.includes("thanks") || query.includes("thank")) {
-      return `You're welcome! If you have any more questions or need assistance, feel free to ask.`;
-    } else if (
-      query.includes("education") ||
-      query.includes("degree") ||
-      query.includes("study")
-    ) {
+    }  else if (query.includes("education") || query.includes("degree") || query.includes("study")) {
       const educationList = personalData.education
         .map((edu) => `${edu.degree} from ${edu.institution} (${edu.year})`)
         .join("<br>");
-      return `Here is my education:<br>${educationList}`;
+      return `Here is my education qalification:<br>${educationList}`;
     } else if (query.includes("skill") || query.includes("skills")) {
       return `My skills include: ${personalData.skills.join(", ")}.`;
     } else if (
@@ -160,10 +139,26 @@ document.addEventListener("DOMContentLoaded", function () {
       return `Visit my GitHub: <a href="https://github.com/PraveenGithubAccnt" target="_blank">Profile</a>`;
     } else if (query.includes("resume")) {
       return `Click to Download: <a href="assets/resumepr.pdf" download class="resume-button">⬇️ Resume</a>`;
-    } else if (query.includes("hello") || query.includes("hi")) {
+    } else if (query.includes("hello") || query.includes("hii")) {
       return `Hello! I'm ${personalData.name}'s Assistant. Ask me about my education, skills, address, projects, or contact details!`;
+    } 
+     else if (query.includes("how") || query.includes("how are you")) {
+      return `I'm just a bot, but I'm here to help you with ${personalData.name}'s portfolio! How can I assist you today?`;
+    } 
+    else if (query.includes("you") || query.includes("who are you")) {
+      return `I'm a chat bot Assitant made by ${personalData.name}. to assist you with his portfolio.`;
+    } 
+    else if (query.includes("tell me about") || query.includes("about")) {
+      return `He is a MCA graduate aspiring Software Developer specializing in mobile and AI-integrated applications, passionate about building 
+      impactful solutions and contributing to innovative tech environments, specializing in skills like ${personalData.skills.join(
+        ", "
+      )}.`;
+    } else if (query.includes("hello") || query.includes("hii")) {
+      return `Hello! I'm ${personalData.name}'s Assistant How can I assist you today? Ask me about my education, skills, address, projects, or contact details!`;
+    } 
+     else if (query.includes("thanks") || query.includes("thank")) {
+      return `You're welcome! If you have any more questions or need assistance, feel free to ask.`;
     }
-
     return `Sorry, either I don't have an answer for that or you have mistyped the spelling. Try asking about my education, skills, address, projects, contact, resume, GitHub, or LinkedIn profile!`;
   }
 
@@ -181,4 +176,13 @@ document.addEventListener("DOMContentLoaded", function () {
   chatInput.addEventListener("keydown", function (e) {
     if (e.key === "Enter") handleSend();
   });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  const resumeLink = document.getElementById('resume-download');
+  if (resumeLink) {
+    resumeLink.addEventListener('click', () => {
+      alert('Resume download started! Thank you for your interest.');
+    });
+  }
 });
