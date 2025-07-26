@@ -29,6 +29,7 @@
                   <li><a href="skills.html" class="nav_li">Skills</a></li>
                   <li><a href="project.html" class="nav_li">Projects</a></li>
                   <li><a href="contact.html" class="nav_li">Contact</a></li>
+                  <li><a href="#" id="assistant-link" class="nav_li">Assistant</a></li>
             </ul>
     </nav>
     </header>
@@ -136,5 +137,23 @@
 </div>
 </section>
 </main>
+<footer>
+  <p>v1.01 &copy; 2024 Praveen Kumar Kushwaha. All rights reserved.</p>
+</footer>
+
+<!-- Chatbot container (outside <main>) -->
+<div id="chatbot-container" class="chatbot-hidden">
+  <div class="chatbot-header">
+    <h3>Ask Assistant!</h3>
+    <button type="button" id="close-chatbot" aria-label="Close chatbot">X</button>
+  </div>
+  <div class="chatbot-messages" id="chatbot-messages"></div>
+  <div class="chatbot-input">
+    <input type="text" id="chat-input" placeholder="Ask about Praveen...">
+    <button type="button" id="send-button">Send</button>
+  </div>
+</div>
+
+<script src="portfolio.js"></script>
   </body>
 </html>

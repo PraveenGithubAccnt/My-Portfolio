@@ -1,0 +1,52 @@
+{
+     "name": "Praveen Kushwaha",
+     "education": [
+       {
+         "degree": "MCA (Master of Computer Applications)",
+         "institution": "Roorkee Institute of Technology",
+         "year": "July 2025"
+       },
+       {
+         "degree": "BCA (Bachelor of Computer Applications)",
+         "institution": "Rajiv Gandhi University (A.P)",
+         "year": "June 2023"
+       },
+       {
+         "degree": "Pursued Higher Secondary Education in Science",
+         "institution": "Kendriya Vidyalaya Tezu(A.P)",
+         "year": "May 2019"
+       }
+     ],
+     "skills": [
+       "HTML",
+       "CSS",
+       "JavaScript",
+       "C++",
+       "Frontend Development",
+       "Problem Solving",
+       "React.js",
+       "Python",
+       "React Native"
+     ],
+     "address": "Delhi, India",
+     "other": {
+       "projects": [
+         {
+           "title": "Voice Assistant for Website Automation",
+           "description": "Built using Python, integrates with web page.",
+           "link": "https://github.com/PraveenGithubAccnt/voice_assistant_in-_Hindi_English"
+         },
+         {
+           "title": "Business Directory App",
+           "description": "Mobile app for local business listings.",
+           "link": "https://github.com/PraveenGithubAccnt/Business-Directory"
+         }
+       ],
+       "contact": {
+         "email": "praveen20005kumar@gmail.com",
+         "linkedin": "https://www.linkedin.com/in/pravkrk",
+         "phone": "9366539798",
+         "github": "https://github.com/PraveenGithubAccnt"
+       }
+     }
+   }
