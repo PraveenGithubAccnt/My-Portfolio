@@ -110,17 +110,14 @@ document.addEventListener("DOMContentLoaded", function () {
     // Handle specific queries using JSON data
     if (query.includes("name")) {
       return `My name is ${personalData.name}.`;
-    } else if (
-      query.includes("who are you") ||
-      query.includes("what is your name")
-    ) {
+    } else if (query.includes("you") || query.includes("who are you")) {
       return `I'm a chat bot Assitant made by ${personalData.name}. to assist you with his portfolio.`;
     } else if (query.includes("tell me about") || query.includes("about")) {
       return `He is a MCA graduate aspiring Software Developer specializing in mobile and AI-integrated applications, passionate about building 
       impactful solutions and contributing to innovative tech environments, specializing in skills like ${personalData.skills.join(
         ", "
       )}.`;
-    } else if (query.includes("hello") || query.includes("hi")) {
+    } else if (query.includes("hello") || query.includes("hii")) {
       return `Hello! I'm ${personalData.name}'s Assistant How can I assist you today? Ask me about my education, skills, address, projects, or contact details!`;
     } else if (
       query.includes("how") ||
