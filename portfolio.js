@@ -31,9 +31,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (chatMessages.children.length === 0) {
       if (backendAvailable) {
-        addMessage("Hi! I'm Praveen's AI assistant powered by Spring Boot. What would you like to know?", "bot");
+        addMessage("Hi! I'm Praveen's AI assistant. What would you like to know?", "bot");
       } else {
-        addMessage("⚠️ Backend server is not running. Please start the Spring Boot application first.", "bot");
+        addMessage("⚠️ server is not running");
       }
     }
   });
@@ -123,7 +123,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (!backendAvailable) {
       addMessage(
-        "⚠️ Cannot send message: Spring Boot backend is not running. Please start the server at http://localhost:8080",
+        "⚠️ Cannot send message: backend is not running. Please try again later.",
         "bot"
       );
       return;
@@ -148,7 +148,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
 
       addMessage(
-        `❌ Backend Error: ${error.message}<br><br>Please ensure:<br>1. Spring Boot server is running at http://localhost:8080<br>2. GEMINI_API_KEY environment variable is set<br>3. Check server logs for details`,
+        `❌ Backend Error: ${error.message}<br><br>Please ensure:<br>1. server is running at http://localhost:8080<br>2. GEMINI_API_KEY environment variable is set<br>3. Check server logs for details`,
         "bot"
       );
     }
