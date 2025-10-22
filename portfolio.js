@@ -148,9 +148,11 @@ document.addEventListener("DOMContentLoaded", function () {
       }
 
       addMessage(
-        `❌ Backend Error: ${error.message}<br><br>Please ensure:<br>1. server is running at http://localhost:8080<br>2. GEMINI_API_KEY environment variable is set<br>3. Check server logs for details`,
+        "❌ Backend Error: try again later.",
         "bot"
       );
+      console.log( `❌ Backend Error: ${error.message}<br><br>Please ensure:<br>1. server is running at http://localhost:8080<br>2. GEMINI_API_KEY environment variable is set<br>3. Check server logs for details`,
+        "bot");
     }
 
     chatInput.value = "";
