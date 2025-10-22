@@ -6,8 +6,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const sendButton = document.getElementById("send-button");
   const chatMessages = document.getElementById("chatbot-messages");
 
-  const BACKEND_URL = "http://localhost:8080/api/chat";
-  const HEALTH_URL = "http://localhost:8080/api/health";
+  const BACKEND_URL = "https://protfoliobackend-production-7b3e.up.railway.app/api/chat";
+  const HEALTH_URL = "https://protfoliobackend-production-7b3e.up.railway.app/api/health";
 
   let backendAvailable = false;
   let conversationHistory = [];
