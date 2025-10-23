@@ -123,7 +123,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (!backendAvailable) {
       addMessage(
-        "⚠️ Cannot send message: backend is not running. Please try again later.",
+        "⚠️ Wait: backend is Initializing.....",
         "bot"
       );
       return;
