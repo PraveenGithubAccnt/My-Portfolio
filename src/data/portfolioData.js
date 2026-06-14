@@ -6,8 +6,8 @@ export const personalInfo = {
   email: "praveen20005kumar@gmail.com",
   phone: "+91 9366539798",
   location: "Noida, India",
-  resumeUrl: "/resumepr.pdf",
-  profileImage: "/profile.png",
+  resumeUrl: `${import.meta.env.BASE_URL}resumepr.pdf`,
+  profileImage: `${import.meta.env.BASE_URL}profile.png`,
   portfolio: "pravportfolio.me",
   social: {
     github: "https://github.com/PraveenGithubAccnt",
